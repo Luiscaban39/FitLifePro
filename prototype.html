@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Prototype - FitLife Pro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #27ae60;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background: #2c3e50;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .feature-box {
+            width: 48%;
+            background: #e8f5e9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .interactive {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FitLife Pro - Application Prototype</h1>
+        <p>A Concept for a Complete Fitness Platform</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="prototype.html">Prototype</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="userguide.html">User Guide</a>
+    </nav>
+
+    <div class="container">
+        <h2>What is FitLife Pro?</h2>
+        <p>FitLife Pro is a concept project designed to showcase how a modern fitness application could work. This prototype represents a structured platform that integrates workout planning, nutrition tracking, progress monitoring, and community engagement in one place.</p>
+
+        <h2>Core Features</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>📋 Personalized Workouts</h3>
+                <p>Users receive tailored workout routines based on their goals, fitness level, and available equipment.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🥗 Nutrition & Meal Planning</h3>
+                <p>Track your daily calorie intake, scan barcodes for food tracking, and receive meal recommendations.</p>
+            </div>
+            <div class="feature-box">
+                <h3>📊 Progress Tracking</h3>
+                <p>Monitor your improvements through detailed statistics, weight tracking, and performance analysis.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🏆 Community Challenges</h3>
+                <p>Join group challenges, compete with friends, and share achievements to stay motivated.</p>
+            </div>
+        </div>
+
+        <h2>How Does It Work?</h2>
+        <p>FitLife Pro would function as a mobile and web-based application, allowing users to create personalized fitness programs. The app would gather user data, recommend plans, and provide real-time feedback.</p>
+        <ol>
+            <li>Users sign up and complete a fitness profile.</li>
+            <li>The app generates a workout and meal plan based on input.</li>
+            <li>Users track workouts and meals daily.</li>
+            <li>Progress is analyzed with interactive charts and insights.</li>
+            <li>Community engagement features keep motivation high.</li>
+        </ol>
+
+        <h2>Interactive Demo</h2>
+        <p>This is a simulation of a fitness tracking feature. Click the button below to "log a workout session" (this is just a fun interaction for the prototype).</p>
+        <div class="interactive">
+            <button class="button" onclick="logWorkout()">Log a Workout</button>
+            <p id="log-message"></p>
+        </div>
+
+        <h2>Project Purpose</h2>
+        <p>The purpose of this prototype is to demonstrate how fitness apps can be structured using technology. Although FitLife Pro is not a real app, the design follows the principles of modern fitness technology and could serve as a foundation for an actual product.</p>
+
+        <h2>Future Expansion Ideas</h2>
+        <ul>
+            <li>AI-powered coaching for smarter workout recommendations.</li>
+            <li>Wearable device integration for real-time heart rate and movement tracking.</li>
+            <li>Advanced analytics for better performance insights.</li>
+            <li>Expanded community features with social leaderboards.</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <p>© 2025 FitLife Pro - Academic Project</p>
+    </footer>
+
+    <script>
+        function logWorkout() {
+            document.getElementById("log-message").innerHTML = "✅ Workout session logged successfully!";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - FitLife Pro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #27ae60;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background: #2c3e50;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .interactive {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FitLife Pro - User Guide</h1>
+        <p>How to Use the FitLife Pro Application</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="prototype.html">Prototype</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="userguide.html">User Guide</a>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome to FitLife Pro!</h2>
+        <p>FitLife Pro is a concept fitness application designed for this project. This user guide provides an overview of how the app would work if it were fully developed.</p>
+        
+        <h2>Getting Started</h2>
+        <ol>
+            <li>Download the FitLife Pro app (hypothetically, as this is a concept).</li>
+            <li>Create an account using your email or social media.</li>
+            <li>Set up your fitness profile, including your weight, goals, and preferences.</li>
+        </ol>
+
+        <h2>Main Features</h2>
+        <div class="section">
+            <h3>📋 Workout Plans</h3>
+            <p>Choose a structured workout plan based on your goals, whether it's weight loss, muscle gain, or endurance training.</p>
+        </div>
+        <div class="section">
+            <h3>🥗 Nutrition Tracking</h3>
+            <p>Log your meals, track calories, and receive meal recommendations to stay on top of your diet.</p>
+        </div>
+        <div class="section">
+            <h3>📊 Progress Monitoring</h3>
+            <p>Track your fitness progress with detailed analytics, weight history, and workout logs.</p>
+        </div>
+        <div class="section">
+            <h3>🏆 Community Engagement</h3>
+            <p>Join fitness challenges, connect with other users, and stay motivated through group activities.</p>
+        </div>
+
+        <h2>How to Log a Workout</h2>
+        <ol>
+            <li>Go to the "Workouts" tab.</li>
+            <li>Select a workout from your personalized plan.</li>
+            <li>Follow the exercise instructions and log your sets and reps.</li>
+            <li>Save your workout session to track progress.</li>
+        </ol>
+
+        <h2>Common Troubleshooting</h2>
+        <ul>
+            <li>🔄 Issue: The app is not syncing with my fitness tracker.</li>
+            <li>✅ Solution: Ensure your device is connected via Bluetooth and restart the app.</li>
+            <li>🔄 Issue: My workouts are not saving.</li>
+            <li>✅ Solution: Check your internet connection and try logging the session again.</li>
+            <li>🔄 Issue: I forgot my password.</li>
+            <li>✅ Solution: Use the "Forgot Password" option on the login screen.</li>
+        </ul>
+
+        <h2>Interactive Feature</h2>
+        <p>Click the button below to get a random fitness tip!</p>
+        <div class="interactive">
+            <button class="button" onclick="showFitnessTip()">Get a Fitness Tip</button>
+            <p id="fitness-tip"></p>
+        </div>
+
+        <h2>Future Updates</h2>
+        <p>Although FitLife Pro is just a project, a real app like this could have future improvements, such as:</p>
+        <ul>
+            <li>AI-powered coaching for smarter workout recommendations.</li>
+            <li>Integration with fitness wearables for real-time feedback.</li>
+            <li>More advanced meal tracking features.</li>
+            <li>Personalized challenges based on user data.</li>
+        </ul>
+
+        <h2>Final Thoughts</h2>
+        <p>This user guide is designed to demonstrate how a fitness app like FitLife Pro could be structured. Even though this is an academic project, it reflects real-world fitness technology trends.</p>
+
+    </div>
+
+    <footer>
+        <p>© 2025 FitLife Pro - Academic Project</p>
+    </footer>
+
+    <script>
+        function showFitnessTip() {
+            const tips = [
+                "Stay hydrated! Drink at least 2 liters of water per day.",
+                "Strength training boosts metabolism and builds lean muscle.",
+                "Stretching before and after workouts reduces injuries.",
+                "Consistency is key! Even 30 minutes a day makes a difference.",
+                "Good sleep is just as important as exercise for muscle recovery."
+            ];
+            const randomTip = tips[Math.floor(Math.random() * tips.length)];
+            document.getElementById("fitness-tip").innerHTML = "💡 " + randomTip;
+        }
+    </script>
+
+</body>
+</html>

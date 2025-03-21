@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Strategy - FitLife Pro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #27ae60;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background: #2c3e50;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .strategy-box {
+            background: #e8f5e9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .interactive {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FitLife Pro - Marketing Strategy</h1>
+        <p>How We Would Launch This Fitness Platform</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="prototype.html">Prototype</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="userguide.html">User Guide</a>
+    </nav>
+
+    <div class="container">
+        <h2>Understanding the Market</h2>
+        <p>FitLife Pro is a concept project designed for this course. While it is not a real product, this marketing strategy outlines how a fitness platform like this could be successfully launched in today's competitive market.</p>
+        
+        <h2>Marketing Goals</h2>
+        <ul>
+            <li>Increase brand awareness among fitness enthusiasts.</li>
+            <li>Attract users through engaging content and social proof.</li>
+            <li>Build a strong community that keeps users motivated.</li>
+            <li>Position FitLife Pro as a comprehensive, all-in-one fitness solution.</li>
+        </ul>
+
+        <h2>Target Audience</h2>
+        <p>FitLife Pro is designed for individuals who want a structured, easy-to-use fitness platform. The primary audience includes:</p>
+        <ul>
+            <li>Beginners who need guidance in their fitness journey.</li>
+            <li>Intermediate fitness enthusiasts looking for better progress tracking.</li>
+            <li>Busy professionals who need efficient workout and meal plans.</li>
+            <li>People who enjoy community-driven fitness challenges.</li>
+        </ul>
+
+        <h2>Marketing Strategy</h2>
+        <div class="strategy-box">
+            <h3>📱 Social Media Marketing</h3>
+            <p>Utilizing platforms like Instagram, TikTok, and YouTube to share daily fitness tips, workout challenges, and user testimonials.</p>
+        </div>
+        <div class="strategy-box">
+            <h3>🏋️ Influencer Collaborations</h3>
+            <p>Partnering with fitness trainers and influencers to showcase the benefits of FitLife Pro and increase credibility.</p>
+        </div>
+        <div class="strategy-box">
+            <h3>📝 Content Marketing & SEO</h3>
+            <p>Creating high-quality blog posts and video tutorials to attract users searching for fitness solutions online.</p>
+        </div>
+        <div class="strategy-box">
+            <h3>🎯 Community Engagement</h3>
+            <p>Hosting live Q&A sessions, fitness challenges, and leaderboards to keep users engaged and motivated.</p>
+        </div>
+
+        <h2>Interactive Feature</h2>
+        <p>Click the button below to see a random marketing tip for launching a fitness app.</p>
+        <div class="interactive">
+            <button class="button" onclick="showMarketingTip()">Get a Marketing Tip</button>
+            <p id="marketing-tip"></p>
+        </div>
+
+        <h2>Revenue Model</h2>
+        <p>FitLife Pro would operate on a freemium model, offering basic features for free with premium upgrades for advanced tools.</p>
+        <ul>
+            <li>Free version includes basic workouts, progress tracking, and community features.</li>
+            <li>Premium version unlocks personalized meal plans, AI-driven coaching, and advanced analytics.</li>
+            <li>Subscription plans range from $9.99/month to $29.99/month.</li>
+        </ul>
+
+        <h2>Final Thoughts</h2>
+        <p>Marketing is key to making an app successful. This plan highlights how FitLife Pro could stand out in the crowded fitness industry by leveraging social engagement, high-quality content, and community-driven growth.</p>
+
+    </div>
+
+    <footer>
+        <p>© 2025 FitLife Pro - Academic Project</p>
+    </footer>
+
+    <script>
+        function showMarketingTip() {
+            const tips = [
+                "Engage with your audience through daily Instagram stories!",
+                "Collaborate with micro-influencers for a targeted reach.",
+                "Create an email marketing campaign with fitness tips.",
+                "Use TikTok challenges to attract a younger audience.",
+                "Offer a free 7-day trial to get users hooked on the app!"
+            ];
+            const randomTip = tips[Math.floor(Math.random() * tips.length)];
+            document.getElementById("marketing-tip").innerHTML = "📢 " + randomTip;
+        }
+    </script>
+
+</body>
+</html>
